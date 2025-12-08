@@ -1,1 +1,228 @@
-https://gamma.app/docs/Sonia-Fenelon-69hgnt3fea1ddwk
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traffic Sign Recognition of Self-Driving Cars</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #f5f5f5;
+      color: #111;
+      transition: background 0.4s ease, color 0.4s ease;
+    }
+    body.dark {
+      background: #0d0d0d;
+      color: #e0e0e0;
+    }
+
+    /* NAVIGATION */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #0a0a0a;
+      color: #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+    nav button {
+      background: #fff;
+      border: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('animated_road.gif') center/cover fixed;
+      padding: 120px 20px;
+      color: white;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
+
+    /* SECTIONS */
+    .section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+      animation: fadeIn 1.2s ease;
+    }
+    .section h3 {
+      border-left: 5px solid #0d6efd;
+      padding-left: 12px;
+      font-size: 1.8rem;
+    }
+
+    /* IMAGE GRIDS */
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .grid img {
+      width: 330px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    /* AI VISION MODE */
+    .ai-vision {
+      position: relative;
+      display: inline-block;
+    }
+    .bbox {
+      position: absolute;
+      border: 3px solid #00ff55;
+      animation: pulse 1.5s infinite;
+      border-radius: 5px;
+    }
+    @keyframes pulse {
+      0%{opacity:0.4}50%{opacity:1}100%{opacity:0.4}
+    }
+
+    /* BUSINESS CARD */
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+      max-width: 350px;
+      margin: 40px auto;
+      text-align: center;
+    }
+    .card.dark {
+      background: #1a1a1a;
+      color: #ddd;
+    }
+
+    /* QR CODE */
+    .qr {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* MOBILE */
+    @media(max-width:768px){
+      nav{
+        flex-direction:column;
+        text-align:center;
+      }
+      nav h1{margin-bottom:10px;}
+      .grid img{width:90%;}
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <h1>Traffic Sign Recognition of Self-Driving Cars</h1>
+    <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+  </nav>
+
+  <header class="hero">
+    <h2>Luxury Autonomous Driving Intelligence</h2>
+    <p>Deep Learning • Road Awareness • Real-Time Traffic Sign Detection</p>
+  </header>
+
+  <section class="section">
+    <h3>Project Overview</h3>
+    <p>
+      This project enhances self-driving safety by enabling autonomous cars to recognize road
+      traffic signs using deep learning. Built on the German Traffic Sign Dataset (GTSDB/GTSRB),
+      the model uses a custom AlexNet CNN to classify real-world traffic signs under varied
+      conditions such as lighting, angles, occlusions, and motion.
+    </p>
+  </section>
+
+  <section class="section">
+    <h3>Luxury Car Visualizations</h3>
+    <div class="grid">
+      <img src="Selfcar driving.png" alt="Luxury Autonomous Car" />
+      <img src="luxury_driver.png" alt="Elegant Driver" />
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Dataset Samples</h3>
+    <div class="grid">
+      <img src="dataset_samples.png" />
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>AI Vision Mode Detection</h3>
+    <div class="ai-vision">
+      <img src="Selfcar driving.png" alt="AI Vision Car" />
+      <div class="bbox" style="top:40px; left:120px; width:120px; height:80px;"></div>
+      <div class="bbox" style="top:200px; left:260px; width:80px; height:80px;"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Training Results</h3>
+    <div class="grid">
+      <img src="loss_curve.png" />
+      <img src="accuracy_curve.png" />
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Model Predictions</h3>
+    <div class="grid">
+      <img src="prediction1.png" />
+      <img src="prediction2.png" />
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Digital Contact Card</h3>
+    <div class="card" id="bizcard">
+      <h3>John Anderson</h3>
+      <p>AI Engineer | Autonomous Vehicle Systems</p>
+      <p><strong>Address:</strong> 1123 Skyline Drive, Miami FL</p>
+      <p><strong>Phone:</strong> (305) 555-8293</p>
+      <p><strong>Email:</strong> john.anderson@autodrive.ai</p>
+    </div>
+
+    <div class="qr">
+      <img src="qrcode.png" alt="QR Code" width="180">
+    </div>
+  </section>
+
+  <script>
+    function toggleDarkMode(){
+      document.body.classList.toggle('dark');
+      document.getElementById('bizcard').classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
